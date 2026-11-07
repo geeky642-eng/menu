@@ -1,0 +1,95 @@
+.scans-page {
+  min-height: 100vh;
+  background: #321e14;
+  padding: 12px 12px 32px;
+}
+
+.scans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 720px;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.scans-list.ready {
+  opacity: 1;
+}
+
+.scan-card {
+  margin: 0;
+  background: #fdfbf7;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.scan-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  background: #f5f0eb;
+}
+
+/* Buttonless branded loader — no actions, hides on first photo */
+.scans-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: #321e14;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+.scans-loader-logo {
+  max-width: 220px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.scans-ring {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid rgba(212, 175, 55, 0.25);
+  border-top-color: #d4af37;
+  animation: scans-spin 0.9s linear infinite;
+}
+
+.scans-loader-text {
+  font-family: 'Playfair Display', serif;
+  color: #f0e6d2;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.scans-loader-count {
+  color: rgba(240, 230, 210, 0.6);
+  font-size: 0.9rem;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes scans-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .scans-page {
+    padding: 24px 24px 48px;
+  }
+
+  .scans-list {
+    gap: 20px;
+  }
+}

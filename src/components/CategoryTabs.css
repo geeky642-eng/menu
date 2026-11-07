@@ -1,0 +1,140 @@
+.category-tabs-wrapper-luxury {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(253, 251, 247, 0.95); /* Warm Cream Glass */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(50, 30, 20, 0.05);
+  padding: var(--spacing-md) 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(50, 30, 20, 0.03);
+}
+
+.category-tabs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  position: relative;
+}
+
+.category-tabs-luxury {
+  display: flex;
+  gap: var(--spacing-sm);
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 4px;
+}
+
+.category-tabs-luxury.animate-hint {
+  animation: hintScroll 3s ease-in-out 0.5s 3;
+}
+
+@keyframes hintScroll {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(8px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-8px);
+  }
+}
+
+.category-tabs-luxury::-webkit-scrollbar {
+  display: none;
+}
+
+.category-tab-luxury {
+  position: relative;
+  background: var(--color-bg-surface);
+  border: 1px solid transparent;
+  color: var(--color-text-secondary);
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s var(--ease-smooth);
+}
+
+.category-tab-luxury:hover {
+  background: #e6ded6;
+  color: var(--color-brown-dark);
+}
+
+.category-tab-luxury.active {
+  background: var(--color-copper-primary);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(161, 88, 44, 0.3);
+  transform: translateY(-1px);
+}
+
+.tab-text {
+  position: relative;
+  z-index: 2;
+}
+
+.tab-glow {
+  display: none;
+}
+
+/* Fade effect on the right with scroll indicator */
+.tabs-fade-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background: linear-gradient(to right, transparent, rgba(253, 251, 247, 0.95));
+  pointer-events: none;
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-indicator-chevron {
+  color: var(--color-copper-primary);
+  animation: pulseChevron 2s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes pulseChevron {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(4px);
+  }
+}
+
+/* Hide scroll arrow on desktop */
+@media (min-width: 769px) {
+  .tabs-fade-right {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-tabs-wrapper-luxury {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .category-tab-luxury {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}

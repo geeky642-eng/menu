@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Presken Hotels & Resorts - Browse our exquisite menu of meals, grills, drinks, and more" />
+    <meta name="keywords" content="Presken, restaurant, bar, menu, Nigerian food, drinks, grills, hotels, resorts" />
+    <meta name="theme-color" content="#321e14" />
+    <link rel="preload" as="image" href="/images/hero-bg-mobile.jpg" media="(max-width: 768px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/images/hero-bg.png" media="(min-width: 769px)" fetchpriority="high" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <title>Menu - Presken Hotels & Resorts</title>
+    <style>
+      #boot-splash{position:fixed;inset:0;z-index:9999;background:#321e14;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:24px;text-align:center}
+      #boot-splash img{max-width:200px;height:auto;border-radius:12px}
+      #boot-splash .boot-ring{width:44px;height:44px;border-radius:50%;border:3px solid rgba(212,175,55,.25);border-top-color:#d4af37;animation:boot-spin .9s linear infinite}
+      #boot-splash p{font-family:Georgia,serif;color:#f0e6d2;font-size:1.1rem;margin:0}
+      @keyframes boot-spin{to{transform:rotate(360deg)}}
+    </style>
+  </head>
+  <body>
+    <div id="boot-splash" style="display:none"><img src="/images/logo1.png" alt="" width="280" height="104" /><div class="boot-ring"></div><p>Preparing our menu…</p></div>
+    <script>
+      // Boot splash shows on the scans view (QR target) only — never on the main site.
+      (function () {
+        try {
+          var h = window.location.hash;
+          var v = new URLSearchParams(window.location.search).get('view');
+          if (h === '#scans' || h === '#/scans' || v === 'scans') {
+            document.getElementById('boot-splash').style.display = 'flex';
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
