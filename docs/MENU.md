@@ -65,7 +65,7 @@ Category tabs: **All · Meals · Specials · Drinks**
 | Subcategory | Items | Notes |
 |-------------|------:|-------|
 | Presken Food Menu Special Meals | 28 | House specials; Seafood Okro / Fisherman Soup / Seafood Rice / Pounded Yam prices aligned with food sheet where they overlap |
-| Special Soup | 7 | All ₦10,000 with choice of swallow |
+| Special Soup | 7 | All ₦12,000 with choice of swallow |
 
 ### Drinks subcategories (drink.jpeg)
 
