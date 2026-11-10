@@ -89,6 +89,9 @@ const drinkExpected = {
     ['Bottle Water (B)', 1000],
     ['Bottle Water (S)', 500],
     ['Cranberry', 15000],
+    ['Can Cranberry', 2000], // house addition, not on printed sheet
+    ['Frutta Juice', 3500], // house addition
+    ['Maccaw', 3500], // house addition
     ['Pulpy', 1000],
     ['Schweppes', 1000],
     ['Teem', 1000],
@@ -156,6 +159,8 @@ const drinkExpected = {
     ['Double Black', 2000],
     ['Judge Bitters', 2000],
     ['Odogwu', 2000],
+    ['Buffalo', 1000], // house addition
+    ['Long Jack', 2000], // house addition
   ],
   'Bitters (Bottle)': [
     ['Action Bitters', 9000],

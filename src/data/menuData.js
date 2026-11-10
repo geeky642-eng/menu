@@ -187,6 +187,9 @@ export const menuData = {
             { id: 'sd7', name: 'Bottle Water (B)', description: 'Large bottled water', price: '₦1,000', image: '/images/bigwater.jpg' },
             { id: 'sd5', name: 'Bottle Water (S)', description: 'Small bottled water', price: '₦500', image: '/images/water.jpg' },
             { id: 'j4', name: 'Cranberry', description: 'Cranberry juice', price: '₦15,000', image: '/images/cranberry.jpg' },
+            { id: 'j9', name: 'Can Cranberry', description: 'Canned cranberry juice', price: '₦2,000', image: '' },
+            { id: 'j7', name: 'Frutta Juice', description: 'Fruit juice', price: '₦3,500', image: '' },
+            { id: 'j8', name: 'Maccaw', description: 'Fruit juice', price: '₦3,500', image: '' },
             { id: 'sd3', name: 'Pulpy', description: 'Fruit juice drink', price: '₦1,000', image: '/images/pulpy.jpg' },
             { id: 'sd11', name: 'Schweppes', description: 'Sparkling mixer', price: '₦1,000', image: '/images/schweppes.jpg' },
             { id: 'sd2', name: 'Teem', description: 'Refreshing soda', price: '₦1,000', image: '/images/team.jpg' }
@@ -273,7 +276,9 @@ export const menuData = {
             { id: 'bt11', name: 'Pet Origin', description: 'Herbal drink', price: '₦2,500', image: '/images/originPlastic.jpg' },
             { id: 'b24', name: 'Double Black', description: 'Bitters', price: '₦2,000', image: '' },
             { id: 'bt10', name: 'Judge Bitters', description: 'Herbal bitters', price: '₦2,000', image: '/images/Judge.jpg' },
-            { id: 'bt9', name: 'Odogwu', description: 'Herbal bitters', price: '₦2,000', image: '/images/Odogwu.jpg' }
+            { id: 'bt9', name: 'Odogwu', description: 'Herbal bitters', price: '₦2,000', image: '/images/Odogwu.jpg' },
+            { id: 'bt12', name: 'Buffalo', description: 'Herbal bitters', price: '₦1,000', image: '' },
+            { id: 'bt13', name: 'Long Jack', description: 'Herbal bitters', price: '₦2,000', image: '' }
           ]
         },
         {

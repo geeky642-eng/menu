@@ -37,9 +37,9 @@ When Meals/Drinks prices or items change:
 
 1. **Meals** — 10 subcategories, **56 items**  
 2. **Specials** — 2 subcategories, **35 items**  
-3. **Drinks** — 16 subcategories, **116 items**  
+3. **Drinks** — 16 subcategories, **121 items**  
 
-**Total: 207 items** *(207 excl. Cocktails house list; 234 incl. Cocktails)*
+**Total: 212 items** *(212 excl. Cocktails house list; 239 incl. Cocktails)*
 
 Category tabs: **All · Meals · Specials · Drinks**
 
@@ -71,12 +71,12 @@ Category tabs: **All · Meals · Specials · Drinks**
 
 | Subcategory | Items |
 |-------------|------:|
-| Soft Drinks & Water | 6 |
+| Soft Drinks & Water | 9 |
 | Malt, Energy Drinks & Dairy | 12 |
 | Coffee & Tea | 13 |
 | Beers, Stouts & Cider | 18 |
 | Stouts | 5 |
-| Bitters | 6 |
+| Bitters | 8 |
 | Bitters (Bottle) | 2 |
 | Sparkling Wines | 5 |
 | Red, White & Rosé Wines | 11 |
@@ -115,6 +115,7 @@ Category tabs: **All · Meals · Specials · Drinks**
 | 2026-07-31 | Removed Specials, Continental, Cocktails (sheet-only policy) |
 | 2026-07-31 | **Restored Specials only**; Continental + Cocktails remain removed |
 | 2026-09-17 | Coffee & Tea (13 items) inserted after Malt/Energy/Dairy per new price sheet — `src/data/menuData.js:coffee-tea` |
+| 2026-11-10 | House additions (not on printed sheets): Buffalo ₦1,000 + Long Jack ₦2,000 under Bitters; Can Cranberry ₦2,000, Frutta Juice ₦3,500, Maccaw ₦3,500 under Soft Drinks & Water |
 
 ### Overlap note (Specials vs Meals)
 
